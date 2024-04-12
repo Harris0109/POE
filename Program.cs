@@ -32,7 +32,7 @@ public class Ingredients //Creating Ingredients class to store methods
 
     }
 
-    internal double CalcScale2(double value2)
+    public double CalcScale2(double value2)
     {
         return value2 = Quantity * 2;
 
@@ -174,7 +174,7 @@ class Program //Creating main class for program aka the interface
             Console.WriteLine("\nDetails of Ingredients:");
             foreach (var ingredient in ingredients)
             {
-                Console.WriteLine($"\nName: {ingredient.Name}\nUnit of measurement: {ingredient.Unit}\nAmount: {ingredients.CalcScale2()} ");
+                Console.WriteLine($"\nName: {ingredient.Name}\nUnit of measurement: {ingredient.Unit}\nAmount: {ingredient.CalcScale2} ");
             }
 
             Console.WriteLine("\nInstructions:");
