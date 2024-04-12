@@ -168,13 +168,13 @@ class Program //Creating main class for program aka the interface
 
         }
 
-          else if (ans == 2)
+        else if (ans == 2)
         {
             // Displaying the details of each ingredient
             Console.WriteLine("\nDetails of Ingredients:");
             foreach (var ingredient in ingredients)
             {
-                Console.WriteLine($"\nName: {ingredient.Name}\nUnit of measurement: {ingredient.Unit}\nAmount: {ingredient.CalcScale1} ");
+                Console.WriteLine($"\nName: {ingredient.Name}\nUnit of measurement: {ingredient.Unit}\nAmount: {ingredients.CalcScale2()} ");
             }
 
             Console.WriteLine("\nInstructions:");
